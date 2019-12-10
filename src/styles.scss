@@ -1,0 +1,194 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    font-family: Alleyn, sans-serif;
+    background: #FAFAFA;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Alleyn, sans-serif;
+}
+
+// #FEF3A2
+// #BCBCC5
+// #FEF3A2
+// #008FBE
+
+// Fonts Imports
+@font-face {
+    font-family: Alleyn;
+    src: url('assets/Fonts/Alleyn-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: Alleyn;
+    src: url('assets/Fonts/Alleyn-Regular-Italic.otf');
+    font-weight: normal;
+    font-style: italic;;
+  }
+@font-face {
+    font-family: Alleyn;
+    src: url('assets/Fonts/Alleyn-Semibold.otf');
+    font-weight: bold;
+    font-style: normal;
+  }
+@font-face {
+    font-family: Alleyn;
+    src: url('assets/Fonts/Alleyn-Semibold-Italic.otf');
+    font-style: italic;
+    font-weight: bold;
+  }
+
+
+h1 {
+    margin:1em 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.container {
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &_small {
+        max-width: 768px;
+    }
+}
+
+.fs__bg {
+    background: radial-gradient(84.6% 86.92% at -22.49% 115.32%, #FEF3A2 0%, #26CAD3 48.45%, #008FBE 100%);
+}
+
+.fs__text {
+    &-yellow {
+        color: #FEF3A2;
+    }
+    &-white {
+        color: white;
+    }
+    &-center {
+        text-align: center;
+    }
+}
+
+.fs__link {
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        color: white;
+    }
+}
+
+
+.form {
+    width: 100%;
+    flex-wrap: wrap;
+
+    &__group {
+        margin-bottom: 30px;
+        padding: 0 5px;
+    }
+
+    &__group {
+        flex-basis: 100%;
+
+        &_doble {
+         flex-basis: 66.666%;
+     }
+
+        &_medio {
+            flex-basis: 50%;
+        }
+
+        &_tercio {
+         flex-basis: 33.333%;
+     }
+    }
+
+    &__label {
+        color: white;
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 600;
+
+        &_select {
+            overflow: hidden;  
+            position: relative;
+            display: block;
+            margin-bottom: 0;
+
+            &:after {
+                content:"\f13a ";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                color: white;
+                position: absolute; 
+                right: 10px; 
+                top: 50%;
+                transform: translateY(30%);
+
+            }
+        }
+
+        &_azul {
+            color: blue;
+        }
+    }
+
+    &__input, &__select, &__textarea {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        font-weight: 300;
+        color: #636363;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+        padding: 8px 10px;
+        font-size: 16px;
+        transition: all ease 0.2s;
+        letter-spacing: 1px;
+
+        &:focus {
+            box-shadow: inset 0px 0px 2px violet;
+        }
+    }
+
+    &__select {
+        margin-top: 8px;
+        padding-right: 30px;
+        background: white;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &_dropdown {
+        -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+    }
+
+    &__textarea {
+        height: 100px;
+        width: 100%;
+        max-width: 100%;
+        resize: none;
+    }
+
+    
+
+
+
+}
+
+

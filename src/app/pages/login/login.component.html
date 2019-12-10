@@ -1,0 +1,27 @@
+<div class="fs__login fs__bg flex">
+       <div class="fs__content flex">
+            <img src="assets/Grouplogo.png" class="fs__logo" alt="">
+            <form  class="form flex">
+                <div class="form__group">
+                        <app-input [icon]="'email'" [placeholder]="'Email address'" ></app-input>
+                </div>
+                <div class="form__group">
+                    <app-input [icon]="'vpn_key'" [placeholder]="'Password'" ></app-input>
+                </div>
+                    <div class="form__group">
+                        <app-button (pressed)="navigate('/')">
+                            Log in
+                        </app-button>
+                      </div>
+                    <div class="form__group fs__text-center">
+                        <a class="fs__link fs__text-yellow"> Forgot your password?</a>
+                      </div>
+                    <div class="form__group">
+                        <p class="fs__text-white"> Don't you have an free account yet?</p>
+                        <app-button [mode]="'outline'">
+                            Sign up now
+                        </app-button>
+                      </div>
+                  </form>
+        </div>
+</div>

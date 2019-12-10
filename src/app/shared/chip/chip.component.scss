@@ -1,0 +1,34 @@
+$color-primary: #27C0C9;
+$color-disabled:#bcbcc5;
+$bg-color-active:#EBF9FA;
+.fs {
+  &__chip {
+    position: relative;
+    display:inline-block;
+    border-radius: 18px;
+    color:#55586F;
+    &-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 13px;
+    }
+    &-text {
+      padding-left:3em;
+      padding-right: 1em;
+      margin:0.5em 0em;
+      font-size: 13px;
+      display:inline-block;
+    }
+    &.disabled {
+        border: 1px solid $color-disabled;
+        color: $color-disabled;
+    
+      }
+      &.active {
+        background: $bg-color-active;
+        color: $color-primary;
+      }
+  }
+}

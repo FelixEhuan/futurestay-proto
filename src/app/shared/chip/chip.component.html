@@ -1,0 +1,8 @@
+<div class="fs__chip" [class.active]="state == 'active'" [class.disabled]="state == 'disabled'">
+    <!-- <div class="fs__chip-holder flex"> -->
+        <div class="fs__chip-icon">
+            <ng-content select="i"></ng-content>
+        </div>
+           <p class="fs__chip-text"><ng-content></ng-content></p>
+    <!-- </div> -->
+</div>

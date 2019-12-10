@@ -1,0 +1,174 @@
+<app-navbar></app-navbar>
+
+<div class="flex container fs__home">
+  <div class="fs__home-connections">
+    <div class="fs__home-title fs__connections flex">
+      <div class="fs__connections-item">
+        <span
+          ><img src="assets/Home/future_logo.png" class="fs__home-icon" alt=""
+        /></span>
+        Smart Connections
+      </div>
+      <a href="" class="fs__home-link">
+        Last 30 days
+        <i class="material-icons fs__connections-icon">expand_more</i>
+      </a>
+    </div>
+    <app-card class="flex">
+      <div class="fs__home-holder flex-wrap">
+        <div class="fs__divider-bookings">
+          <h4 class="fs__divider-title">Bookings</h4>
+          <div class="flex fs__booking-holder">
+            <app-connection
+              class="fs__booking-item"
+              [data]="{ icon: 'assets/Home/Iconos/logo2.png', value: 20 }"
+            ></app-connection>
+            <app-connection
+              class="fs__booking-item"
+              [data]="{ icon: 'assets/Home/Iconos/logo3.png', value: 20 }"
+            ></app-connection>
+            <app-connection
+              class="fs__booking-item"
+              [data]="{ icon: 'assets/Home/Iconos/logo4.png', value: 20 }"
+            ></app-connection>
+            <app-connection
+              class="fs__booking-item"
+              [data]="{
+                icon: 'assets/Home/Iconos/logo1.png',
+                value: 20,
+                pending: true
+              }"
+            ></app-connection>
+          </div>
+        </div>
+        <div class="fs__divider-tasks">
+          <h4 class="fs__divider-title">Completed Tasks</h4>
+          <div class="flex fs__tasks-holder">
+            <app-task class="fs__tasks-item">
+              <i class="material-icons">sentiment_satisfied_alt</i>
+              87
+              <p task-description>Guest Interactions</p>
+            </app-task>
+            <app-task class="fs__tasks-item">
+              <i class="material-icons">event_available</i>
+              132
+              <p task-description>Number of bookings</p>
+            </app-task>
+            <app-task class="fs__tasks-item">
+              <i class="material-icons">credit_card</i>
+              52
+              <p task-description>Processed payments</p>
+            </app-task>
+          </div>
+        </div>
+        <div class="flex fs__divider-revenue">
+          <h4 class="fs__divider-title">Revenue</h4>
+          <div class="fs__revenue-holder flex">
+            <div class="fs__revenue-item">
+              <h4 class="fs__revenue-price"><span>$</span></h4>
+            </div>
+            <div class="fs__revenue-item">
+              <h4 class="fs__revenue-price">32,569.00</h4>
+              <p class="fs__revenue-description">Total volume of bookings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-card>
+  </div>
+  <div class="fs__home-recent">
+    <div class="fs__home-title fs__recent-title flex">
+      <div class="fs__recent-item">
+        <span class="fs__home-notification">14</span> Recent Activity
+      </div>
+      <a href="" class="fs__home-link"> View all activity</a>
+    </div>
+    <app-card class="fs__card fs__home-recent">
+      <div class="fs__home-message">
+        <app-message
+          [data]="{
+            title: 'You get paid!',
+            description: 'Booking.com comission...',
+            time: '2:25'
+          }"
+        ></app-message>
+      </div>
+      <div class="fs__home-message">
+        <app-message
+          [data]="{
+            title: 'Comission paid',
+            description: 'Booking.com comission...',
+            time: '2:25'
+          }"
+        ></app-message>
+      </div>
+      <div class="fs__home-message">
+        <app-message
+          [data]="{
+            title: 'New booking',
+            description: 'Booking.com comission...',
+            time: '2:25'
+          }"
+        ></app-message>
+      </div>
+    </app-card>
+  </div>
+  <div class="fs__home-schedule">
+    <div class="fs__home-title fs__schedule flex">
+      <div class="fs__schedule-title">
+        <span class="fs__schedule-icon"><i class="material-icons"> today</i></span> 
+        Upcoming Schedule
+      </div>
+      <div class="flex fs__schedule-actions">
+        <a href="" class="fs__home-link"> <i class="material-icons fs__schedule-icon">add_circle_outline</i> Add Reservation</a>
+        <hr class="vertically" />
+        <a href="" class="fs__home-link"> Only busy days <i class="material-icons fs__schedule-icon">expand_more</i></a>
+        <div class="fs__schedule-navigation">
+                <a href="" class="fs__home-link"> <i class="material-icons fs__schedule-icon fs__schedule-circle">chevron_left</i></a>
+                <a href="" class="fs__home-link"> <i class="material-icons fs__schedule-icon fs__schedule-circle">chevron_right</i></a>
+        </div>
+
+      </div> 
+    </div>
+    <app-card class="fs__card fs__home-schedule">
+      <div class="flex fs__schedule">
+        <app-reservation class="fs__schedule-item">
+          <p resMonth>Jan</p>
+          <p resDay>Mon 21</p>
+          <span resPlace>The Washington</span>
+          <span resClient>Amelia Asimov</span>
+        </app-reservation>
+        <app-reservation class="fs__schedule-item" [check]="true">
+          <p resMonth>Jan</p>
+          <p resDay>Tue 22</p>
+          <span resPlace>The Jefferson</span>
+          <span resClient>Laurie Wilkins</span>
+        </app-reservation>
+        <app-reservation class="fs__schedule-item">
+          <p resMonth>Jan</p>
+          <p resDay>Wed 23</p>
+          <span resPlace>The Washington</span>
+          <span resClient>Amelia Asimov</span>
+        </app-reservation>
+        <app-reservation class="fs__schedule-item" [check]="true">
+          <p resMonth>Jan</p>
+          <p resDay>Fri 25</p>
+          <span resPlace>The Lincoln</span>
+          <span resClient>Amelia Asimov</span>
+        </app-reservation>
+        <app-reservation class="fs__schedule-item">
+          <p resMonth>Jan</p>
+          <p resDay>Sat 26</p>
+          <span resPlace>The Jefferson</span>
+          <span resClient>Amelia Asimov</span>
+        </app-reservation>
+        <app-reservation class="fs__schedule-item">
+          <p resMonth>Jan</p>
+          <p resDay>Sun 27</p>
+          <span resPlace>The Washington</span>
+          <span resClient>Amelia Asimov</span>
+        </app-reservation>
+      </div>
+    </app-card>
+  </div>
+</div>

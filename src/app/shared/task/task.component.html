@@ -1,0 +1,11 @@
+<div class="fs__task-holder flex">
+        <div class="fs__task-icon">
+            <ng-content select="i"></ng-content>
+        </div>
+  <div class="fs__task-item">
+    <div class="fs__task-price">
+        <b><ng-content></ng-content> <span> <i class="material-icons fs__task-check">check</i></span></b>
+    </div>
+    <div class="fs__task-description"><ng-content select="[task-description]"></ng-content></div>
+  </div>
+</div>

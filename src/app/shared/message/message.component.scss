@@ -1,0 +1,15 @@
+.fs__message {
+    justify-content: space-between;
+    &-title {
+        color: #55586F;
+        font-size: 18px;
+    }
+    &-description {
+        font-size: 13px;
+        color: #55586F;
+    }
+    &-time {
+        align-self: center;
+        font-size: 13px;
+    }
+}

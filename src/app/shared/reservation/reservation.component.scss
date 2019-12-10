@@ -1,0 +1,29 @@
+.fs__reservation {
+    padding: 5px;
+    &-checked {
+        width: 100%;
+        justify-content: space-between;
+    }
+    &-img {
+        // height: 30px;
+        width: 70px;
+    }
+    &-logo {
+        width: 13px;
+    }
+    &-month {
+        font-size: 12px;
+        color:#9E9FAB;
+    }
+    &-day {
+        // font-weight: bold;
+        color:#2A2C37;
+    }
+    &-text {
+        padding-top: 1em;
+        color:#2A2C37;
+        margin: 0px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

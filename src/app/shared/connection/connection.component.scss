@@ -1,0 +1,20 @@
+.fs {
+    &__connection {
+        width: 90%;
+        margin: auto;
+        &-img {
+            width: 40px;
+            height: auto;
+        }
+        &-text {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        &-chip {
+            margin: 1em 0em;
+        }
+        &-disabled {
+            margin-top: 2em;
+        }
+    }
+}

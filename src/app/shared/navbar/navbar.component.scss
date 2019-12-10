@@ -1,0 +1,30 @@
+.fs__navbar {
+    height: 50px;
+    background-color: white;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    position: relative;
+    &-logo {
+        position: absolute;
+        width: 100px;
+        height: auto;
+    }
+    &-links {
+        padding-left: 150px;
+        align-items: center;
+    }
+    &-item {
+        margin:auto;
+        line-height: 50px;
+        color: #43455C;
+        padding-right: 1em;
+    }
+    &-icon {
+        vertical-align: middle;
+        color:#43455C;
+    }
+    @media(max-width: 968px) {
+        display: none;
+    }
+    
+}

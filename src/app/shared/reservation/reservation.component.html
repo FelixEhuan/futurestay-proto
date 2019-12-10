@@ -1,0 +1,19 @@
+<div class="fs__reservation">
+    <div class="fs__reservation-month">
+        <ng-content select="[resMonth]"></ng-content>
+    </div>
+    <div class="fs__reservation-day">
+        <ng-content select="[resDay]"></ng-content>
+    </div>
+    <div class="fs__reservation-checked flex">
+        <img [src]="checkedImg" class="fs__reservation-img" alt="">
+        <img src="assets/Home/google.png" class="fs__reservation-logo" alt="">
+    </div>
+    <div class="fs__reservation-text">
+        <p class="fs__reservation-text">
+            <ng-content select="[resPlace]"></ng-content>
+            <br>
+            <ng-content select="[resClient]"></ng-content>
+        </p>
+        </div>
+</div>
